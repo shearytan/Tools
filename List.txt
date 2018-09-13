@@ -10,6 +10,7 @@
 10) Times
 11) Weather Monitor
 12) Simple SVG **
+13) Word of the day
 
 Fix
 1) Calculator with invalid input
