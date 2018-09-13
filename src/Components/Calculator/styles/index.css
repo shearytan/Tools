@@ -50,12 +50,12 @@
 .screen {
     border: solid;
     width: 80%;
-    height: 50px;
+    height: 45px;
     text-align: center;
     margin: 10px auto;
     background-color: ghostwhite;
     box-shadow: 0 0 2px black inset;
-    font-size: 40px;
+    font-size: 30px;
     font-family:Audiowide;
     overflow: hidden;
 }

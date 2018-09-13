@@ -16,7 +16,7 @@ export default class Calculator extends Component {
     calculateTotal = () => {
         let total = this.state.total.join('')
         if(total) {
-            total = eval(total);
+            total = eval(total).toFixed(2);
             this.setState({total: [total]})
         }
     }
