@@ -38,6 +38,7 @@ export default class index extends Component {
                     data: res.data.query.results.channel,
                     error: false,
                 })
+                console.log(res)
             })
             .catch(err => {
                 this.setState({error: true})
@@ -46,28 +47,35 @@ export default class index extends Component {
     }
 
     render() {
+        const { error, city, data } = this.state;
         return (
             <Card className="card"> 
                 <Typography gutterBottom variant="headline" component="h2">Weather</Typography>
-                <Forecast forecast={this.state.data}/>
-                <form onSubmit={this.handleSubmit}>
-                {this.state.error ? 
-                    <TextField
-                        error
-                        label="Error"
-                        value={this.state.city}
-                        onChange={this.handleChange}
-                        margin="normal"
-                    />
-                    :
-                    <TextField 
-                        name="city"
-                        value={this.state.city}
-                        onChange={this.handleChange}
-                        label="Enter a city"
-                        margin="normal"
-                    />
+                <pre className="card-title-pre">{city}</pre>
+
+                {error ? 
+                    <Typography gutterBottom variant="headline" component="h2" color="error">No result</Typography> 
+                    : <Forecast forecast={data}/>
                 }
+
+                <form onSubmit={this.handleSubmit}>
+                    {error ? 
+                        <TextField
+                            error
+                            label="Error"
+                            value={city}
+                            onChange={this.handleChange}
+                            margin="normal"
+                        />
+                        :
+                        <TextField 
+                            name="city"
+                            value={city}
+                            onChange={this.handleChange}
+                            label="Enter a city"
+                            margin="normal"
+                        />
+                    }
                 </form>
             </Card>
         )
