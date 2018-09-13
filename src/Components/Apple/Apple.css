@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Gamja+Flower");
+
+.apple {
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.767);
+    height: 150px;
+    width: 200px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.apple:hover {
+    box-shadow: 0 0 20px rgb(27, 27, 26);
+    animation-name: shake;
+    animation-duration: 1000ms;
+}
+
+.popover {
+    padding: 20px;
+    font-size: 20px;
+    font-family: Gamja Flower;
+}
+
+@keyframes shake {
+    from,
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translate3d(10px, 0, 0);
+    }
+  }
