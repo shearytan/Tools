@@ -1,0 +1,39 @@
+<svg width="640" height="479.99999999999994" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <radialGradient cx="0.6438" cy="0.54297" id="svg_37" r="0.5" spreadMethod="pad">
+   <stop offset="0" stop-color="#000000"/>
+   <stop offset="1" stop-color="#ffffff"/>
+  </radialGradient>
+  <linearGradient id="svg_46" spreadMethod="pad">
+   <stop offset="0" stop-color="#000000"/>
+   <stop offset="0.96021" stop-color="#ffffff"/>
+  </linearGradient>
+  <filter height="200%" id="svg_3_blur" width="200%" x="-50%" y="-50%">
+   <feGaussianBlur stdDeviation="0.3"/>
+  </filter>
+  <radialGradient cx="0.52271" cy="0.51172" gradientTransform="rotate(-43,0.522705078125,0.51171875) translate(0.88337158203125,0) scale(-0.69,1)" id="svg_25" r="0.75562" spreadMethod="pad">
+   <stop offset="0.49927" stop-color="#000000"/>
+   <stop offset="1" stop-color="#ffffff"/>
+  </radialGradient>
+  <radialGradient cx="0.80396" cy="0.19141" gradientTransform="rotate(-53,0.803955078125,0.19140625) translate(0.2733447265625001,0) scale(0.6599999999999999,1)" id="svg_27" r="0.75562" spreadMethod="pad">
+   <stop offset="0.47974" stop-color="#000000"/>
+   <stop offset="1" stop-color="#ffffff"/>
+  </radialGradient>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m204.21254,144.5c34.21712,-31 113.02016,-27 121.31523,-8c8.29504,19 16.84827,-62 90.72717,-25.5c73.87891,36.5 67.14127,118.5 66.6228,128c-0.51843,9.5 -27.51425,104.5 -58.6207,113.5c-31.10648,9 -75.43427,-26 -87.24774,-30.5c-11.81348,-4.5 -23.92413,3.5 -42.06958,28c-18.14545,24.5 -99.50172,-44.5 -116.20247,-82.5c-16.70076,-38 -8.74185,-92 25.47528,-123z" fill="#db2525" id="svg_7" stroke="url(#svg_37)" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <path d="m324.01251,140.99994l-7.51251,-41.49997l14.41211,-33.99997c0,0 6.08789,5.5 6.08789,5.5c0,0 -8.92886,24.99998 -10.14645,30.49997c-1.21759,5.49999 -1.10162,36.57591 4.87027,41.99997" fill="#7f3f00" id="svg_9" opacity="0.95" stroke="url(#svg_46)" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0.82" stroke-width="2"/>
+  <ellipse cx="341.29307" cy="65.59017" fill="#7f3f00" id="svg_10" rx="5.33907" ry="4.5" stroke="url(#svg_25)" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" transform="matrix(0.780625 0.354085 -0.350485 0.788644 92.2828 -106.497)"/>
+  <ellipse cx="297.5" cy="23.5" fill="#7f3f00" id="svg_11" rx="1" ry="0" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <path d="m311.06686,82.35934c-21.73126,-27.76791 -77.56685,-21.68456 -77.56685,-21.68456c0,0 14.97008,15.84528 17.17157,17.64587c2.20146,1.8006 25.97749,9.003 28.17897,8.64288c2.20151,-0.36012 53.94757,23.16371 32.21634,-4.60419l-0.00003,0z" fill="#007f00" id="svg_12" stroke="url(#svg_27)" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2"/>
+  <path d="m266.17279,67.12206c44.93414,20.69292 45.66394,25.57922 45.14847,25.24072c-0.51547,-0.33852 -45.14847,-25.24072 -45.14847,-25.24072z" fill="none" id="svg_15" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null"/>
+  <line fill="none" id="svg_16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="265.5" x2="272.5" y1="72.5" y2="72.5"/>
+  <line fill="none" id="svg_20" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="278.5" x2="278.5" y1="66.5" y2="69.5"/>
+  <line fill="none" id="svg_21" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="292.5" x2="291.5" y1="72.5" y2="81.5"/>
+  <line fill="none" id="svg_22" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="277.5" x2="277.5" y1="69.5" y2="72.5"/>
+  <line fill="none" id="svg_23" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="283.5" x2="292.5" y1="79.5" y2="81.5"/>
+  <text fill="#ffffff" filter="url(#svg_3_blur)" font-family="Fantasy" font-size="22" font-weight="normal" id="svg_3" opacity="0.95" stroke="url(#svg_37)" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" transform="matrix(0.682039 0 0 0.67854 142.479 129.056)" x="377.98273" xml:space="preserve" y="274.36965">Apple SVG</text>
+ </g>
+</svg>

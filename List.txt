@@ -1,0 +1,11 @@
+1) Clock **
+2) Calculator **
+3) Google Clone
+4) Backgrond color change
+5) New York times API search
+6) Harry Potter flip-card
+7) JavaScript game
+8) Todo List
+9) Coffee
+10) Times
+11) Weather Monitor
