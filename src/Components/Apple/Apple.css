@@ -16,9 +16,12 @@
 }
 
 .popover {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 20px;
     font-family: Gamja Flower;
+    background-color: rgb(57, 197, 151);
+    color: white;
 }
 
 @keyframes shake {

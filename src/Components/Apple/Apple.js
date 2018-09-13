@@ -35,10 +35,13 @@ export default class Apple extends Component {
             vertical: 'top',
           }}
         >
-          <span className="popover">Just a simple SVG!</span>
+          <p className="popover">
+            Just a simple SVG! <br />
+            An apple logo without a bite!
+          </p>
         </Popover>
-        <div className="apple-container" onClick={this.handleClick}>
-          <img src={AppleLogo} className="apple"/>
+        <div className="apple-container">
+          <img src={AppleLogo} className="apple" onClick={this.handleClick}/>
         </div>
       </div>
     )
