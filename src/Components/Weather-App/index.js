@@ -48,17 +48,25 @@ export default class index extends Component {
 
     render() {
         const { error, city, data } = this.state;
+        const style = {
+            card: {
+                 backgroundColor: "rgb(252, 252, 167)",
+                 borderRadius: "4%"
+            }
+           
+        }
         return (
-            <Card className="card"> 
-                <Typography gutterBottom variant="headline" component="h2">Weather</Typography>
+            <Card className="card" style={style.card}> 
+                <Typography gutterBottom variant="headline" component="h2" color="textPrimary">Weather</Typography>
                 <pre className="card-title-pre">{city}</pre>
 
                 {error ? 
+                    
                     <Typography gutterBottom variant="headline" component="h2" color="error">No result</Typography> 
                     : <Forecast forecast={data}/>
                 }
 
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className="form">
                     {error ? 
                         <TextField
                             error
@@ -74,6 +82,7 @@ export default class index extends Component {
                             onChange={this.handleChange}
                             label="Enter a city"
                             margin="normal"
+                            color="primary"
                         />
                     }
                 </form>

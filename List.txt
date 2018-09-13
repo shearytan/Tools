@@ -8,9 +8,9 @@
 8) Todo List
 9) Coffee
 10) Times
-11) Weather Monitor
+11) Weather Monitor **
 12) Simple SVG **
-13) Word of the day
+14) Dictionary
 
 Fix
 1) Calculator with invalid input
