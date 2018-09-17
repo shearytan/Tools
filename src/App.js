@@ -4,6 +4,7 @@ import Clock from './Components/Clock';
 import Apple from './Components/Apple/Apple';
 import Calculator from './Components/Calculator';
 import Weather from './Components/Weather-App';
+import Background from './Components/Background';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Apple />
         <Calculator />
         <Weather />
+        <Background />
       </div>
     );
   }
