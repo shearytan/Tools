@@ -24,7 +24,7 @@ export default class Background extends Component {
             <div className="background-container">
                 This is background
                 <FormControl>
-                    <InputLabel>Color</InputLabel>
+                    <InputLabel htmlFor="name-simple">Color</InputLabel>
                     <Input value={this.state.value} onChange={this.handleChange}/>
                 </FormControl>
             </div>
