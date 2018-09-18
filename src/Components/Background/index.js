@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+import InputAndornment from '@material-ui/core/InputAdornment';
+
 
 import './styles/index.css';
+import { Input, InputAdornment } from '@material-ui/core';
 
 export default class Background extends Component {
     constructor(props) {
@@ -16,18 +17,32 @@ export default class Background extends Component {
 
     handleChange = (e) => {
         this.setState({value: e.target.value})
-        console.log(this.state.value)
+    }
+
+    handleSubmit = (e, color) => {
+        e.preventDefault();
+        this.colorChange(color)
+    }
+
+    colorChange = (color) => {
+        return document.body.style.background = color;
     }
 
     render() {
+        
         return (
-            <div className="background-container">
-                This is background
-                <FormControl>
-                    <InputLabel htmlFor="name-simple">Color</InputLabel>
-                    <Input value={this.state.value} onChange={this.handleChange}/>
-                </FormControl>
-            </div>
+                <form onSubmit={(e, color) => this.handleSubmit(e, this.state.value)} className="background-container">
+                    <TextField 
+                        label="Colour"
+                        value={this.state.value}
+                        onChange={this.handleChange}
+                        margin="normal"
+                        variant="outlined"
+                        helperText="words, hex, rgb"
+                    />
+                    
+                </form>
+            
         )
     }
 }
