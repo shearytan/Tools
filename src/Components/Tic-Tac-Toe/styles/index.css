@@ -1,0 +1,12 @@
+.board {
+    display: flex;
+    width: 253px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px black;
+}
+
+.box {
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+}
