@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import InputAndornment from '@material-ui/core/InputAdornment';
+import TextField from '@material-ui/core/TextField'
 
 
 import './styles/index.css';
@@ -32,13 +30,14 @@ export default class Background extends Component {
         
         return (
                 <form onSubmit={(e, color) => this.handleSubmit(e, this.state.value)} className="background-container">
+                    <h5>Colour the background!</h5>
                     <TextField 
                         label="Colour"
                         value={this.state.value}
                         onChange={this.handleChange}
                         margin="normal"
                         variant="outlined"
-                        helperText="words, hex, rgb"
+                        helperText="words, hex, rgb (no space)"
                     />
                     
                 </form>

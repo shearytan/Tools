@@ -5,16 +5,20 @@ import Apple from './Components/Apple/Apple';
 import Calculator from './Components/Calculator';
 import Weather from './Components/Weather-App';
 import Background from './Components/Background';
+import NYT from './Components/NYT-Top-Stories';
+
+import './index.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Clock />
         <Apple />
         <Calculator />
         <Weather />
         <Background />
+        <NYT />
       </div>
     );
   }

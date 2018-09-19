@@ -38,7 +38,6 @@ export default class index extends Component {
                     data: res.data.query.results.channel,
                     error: false,
                 })
-                console.log(res)
             })
             .catch(err => {
                 this.setState({error: true})

@@ -1,6 +1,7 @@
 .card {
     max-width: 345px;
     padding: 20px;
+    max-height: 250px;
 }
 
 .card .card-title-pre {
