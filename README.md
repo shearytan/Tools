@@ -1,4 +1,6 @@
-## Ongoing side project ⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 
+# Ongoing side project ⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 🚧⚠️ 
+
+### The purpose of this project is to practise ReactJS
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
