@@ -14,11 +14,11 @@ class App extends Component {
     return (
       <div className="app">
         <Clock />
+        <NYT />
         <Apple />
         <Calculator />
         <Weather />
         <Background />
-        <NYT />
       </div>
     );
   }

@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .app {
     display: flex;
     flex-direction: row;

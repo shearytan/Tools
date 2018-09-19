@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.expansion-container {
+    background: red;
+}
+
+.expansion-summary {
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito;
+}
+
+.expansion-summary h3{
+    background-color: #F7F7ED;
+    padding: 10px;
+    box-shadow: 0 4px 2px gray;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+.expansion-summary .expansion-summary-sub{
+    display: flex;
+    flex-direction: column;
+}
+
+.expansion-details {
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.expansion-details em {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.expansion-details a i {
+    color: lightgray;
+}
+
+.expansion-details a i:hover {
+    color: rgb(167, 238, 119);
+}

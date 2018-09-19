@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 
 import NYTCard from './Components/Card';
+import './styles/index.css';
 
 export default class NYT extends Component {
     constructor(props) {
