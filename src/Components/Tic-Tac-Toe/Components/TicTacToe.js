@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 
+import Winner from './Winner';
+
 export default class Board extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      winner: "",
     };
     this.gameState = {
       sign: "X",
@@ -22,7 +24,9 @@ export default class Board extends Component {
     }
 
     let winner = this.handleWinner();
-    console.log("Winner is: ", winner)
+
+    
+  
   }
 
   handleWinner = (e) => {
@@ -40,7 +44,9 @@ export default class Board extends Component {
 
   render() {
     return (
-        <div className="board" onClick={(e) => this.handleClick(e.target)}>
+        <div>
+          <Winner winner={this.state.winner} />
+          <div className="board" onClick={(e) => this.handleClick(e.target)}>
           <div className="box" data-square="0"></div>
           <div className="box" data-square="1"></div>
           <div className="box" data-square="2"></div>
@@ -52,6 +58,7 @@ export default class Board extends Component {
           <div className="box" data-square="6"></div>
           <div className="box" data-square="7"></div>
           <div className="box" data-square="8"></div>
+        </div>
         </div>
     )
   }
