@@ -4,7 +4,7 @@
 4) Backgrond color change **
 5) New York times Top Stories API search **
 6) Harry Potter flip-card
-7) JavaScript game
+7) Tic Tac Toe **
 8) Todo List
 9) Coffee
 10) Timer

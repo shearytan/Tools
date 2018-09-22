@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Winner from './Winner';
-import Reset from './Reset';
 export default class Board extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +11,7 @@ export default class Board extends Component {
       sign: "X",
       board: Array(9).fill(''),
       totalMove: 0,
-      gameEnded: false
+      gameEnded: false,
     }
   }
 
@@ -70,7 +69,6 @@ export default class Board extends Component {
             <div className="box" data-square="7"></div>
             <div className="box" data-square="8"></div>
           </div>
-          <Reset />
         </div>
     )
   }
