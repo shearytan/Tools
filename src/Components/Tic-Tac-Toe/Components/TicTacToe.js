@@ -11,11 +11,13 @@ export default class Board extends Component {
     this.gameState = {
       sign: "X",
       board: Array(9).fill(''),
-      totalMove: 0
+      totalMove: 0,
+      gameEnded: false
     }
   }
 
   handleClick = (e) => {
+    if (this.gameState.gameEnded) return;
     if(this.gameState.board[e.dataset.square] === "") {
       this.gameState.board[e.dataset.square] = this.gameState.sign;
       e.innerText = this.gameState.sign;
@@ -25,8 +27,16 @@ export default class Board extends Component {
 
     let winner = this.handleWinner();
 
-    
-  
+    if(winner === "X") {
+      this.gameState.gameEnded = true;
+      this.setState({winner: "X"});
+    } else if (winner === "O") {
+      this.gameState.gameEnded = true;
+      this.setState({winner: "O"});
+    } else if (winner === "draw") {
+      this.gameState.gameEnded = true;
+      this.setState({winner: "no one"});
+    }
   }
 
   handleWinner = (e) => {
@@ -36,29 +46,30 @@ export default class Board extends Component {
         if(board[winPath[i][0]] === board[winPath[i][1]] && board[winPath[i][1]] === board[winPath[i][2]]) {
           return board[winPath[i][0]];
         }
-        if(this.gameState.totalMove === 9) {
-          return "draw"
-        }
       }
+      if(this.gameState.totalMove === 9) {
+        return "draw";
+      }
+      
   }
 
   render() {
     return (
         <div>
           <Winner winner={this.state.winner} />
-          <div className="board" onClick={(e) => this.handleClick(e.target)}>
-          <div className="box" data-square="0"></div>
-          <div className="box" data-square="1"></div>
-          <div className="box" data-square="2"></div>
-          
-          <div className="box" data-square="3"></div>
-          <div className="box" data-square="4"></div>
-          <div className="box" data-square="5"></div>
+            <div className="board" onClick={(e) => this.handleClick(e.target)}>
+              <div className="box" data-square="0"></div>
+              <div className="box" data-square="1"></div>
+              <div className="box" data-square="2"></div>
+              
+              <div className="box" data-square="3"></div>
+              <div className="box" data-square="4"></div>
+              <div className="box" data-square="5"></div>
 
-          <div className="box" data-square="6"></div>
-          <div className="box" data-square="7"></div>
-          <div className="box" data-square="8"></div>
-        </div>
+              <div className="box" data-square="6"></div>
+              <div className="box" data-square="7"></div>
+              <div className="box" data-square="8"></div>
+            </div>
         </div>
     )
   }

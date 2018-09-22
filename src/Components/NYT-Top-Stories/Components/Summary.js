@@ -23,7 +23,7 @@ const Summary = ({data}) => (
                             <div className="expansion-details">
                                 {
                                     val ? 
-                                    val.multimedia.slice(3, 4).map(val => (<img src={val.url} />)) : null
+                                    val.multimedia.slice(3, 4).map((val, i) => (<img key={i} src={val.url} />)) : null
                                 }
                                 <p>{val.abstract}</p>
                                 <a href={val.short_url}><i className="fas fa-link fa-lg"></i></a>
