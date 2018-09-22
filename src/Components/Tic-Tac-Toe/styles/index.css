@@ -4,7 +4,7 @@
     font-family: Acme;
     text-align: center;
     background: rgb(73, 42, 16);
-    padding: 0px 30px 30px 30px;
+    padding: 0px 30px 20px 30px;
     color: white;
     box-shadow: 0 0 5px black;
 }
@@ -31,4 +31,8 @@
 
 .winner {
     text-align:
+}
+
+.reset-button {
+    margin-top: 15px;
 }

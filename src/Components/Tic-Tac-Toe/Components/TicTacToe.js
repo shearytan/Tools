@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import Winner from './Winner';
 import Reset from './Reset';

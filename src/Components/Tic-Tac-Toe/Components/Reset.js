@@ -1,8 +1,9 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 
 const Reset = () => (
-    <div>
-        This is Reset button
+    <div className="reset-button">
+        <Button variant="contained" size="large">Reset</Button>
     </div>
 )
 
