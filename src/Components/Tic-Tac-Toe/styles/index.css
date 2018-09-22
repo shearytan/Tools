@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Acme');
 
+.tic-tac-toe-container {
+    font-family: Acme;
+    text-align: center;
+    background: rgb(73, 42, 16);
+    padding: 0px 30px 30px 30px;
+    color: white;
+    box-shadow: 0 0 5px black;
+}
+
+.tic-tac-toe-container h1{
+    font-size: 40px;
+}
+
 .board {
     display: flex;
     width: 264px;
     flex-wrap: wrap;
-    box-shadow: 0 0 10px black;
-    font-family: Acme;
+    box-shadow: 0 0 40px black;
     background: black;
-    transition: 200ms ease;
 }
 
 .box {
@@ -15,7 +26,9 @@
     width: 80px;
     border: 4px solid white;
     font-size: 70px;
-    text-align: center;
     color: rgb(123, 255, 0);
-    transition: 200ms ease;
+}
+
+.winner {
+    text-align:
 }

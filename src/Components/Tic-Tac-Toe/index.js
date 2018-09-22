@@ -6,7 +6,7 @@ import Board from './Components/TicTacToe';
 export default class TicTacToe extends Component {
   render() {
     return (
-      <div>
+      <div className="tic-tac-toe-container">
         <h1>Tic Tac Toe</h1>
         <Board />
       </div>

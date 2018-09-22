@@ -4,7 +4,7 @@ const Winner = ({winner}) => (
     <div>
         {
             winner 
-            ? <h3>And {`${winner}`} wins!</h3>
+            ? <h3 className="winner">And {`${winner}`} wins!</h3>
             : null
         }
     </div>
