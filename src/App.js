@@ -7,6 +7,7 @@ import Weather from './Components/Weather-App';
 import Background from './Components/Background';
 import NYT from './Components/NYT-Top-Stories';
 import TicTacToe from './Components/Tic-Tac-Toe';
+import FlipCard from './Components/Flip-Card';
 
 import './index.css';
 
@@ -21,6 +22,7 @@ class App extends Component {
         <Weather />
         <Background />
         <TicTacToe />
+        <FlipCard />
       </div>
     );
   }
