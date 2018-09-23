@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import './styles/index.css';
-import Cards from './Components/Cards';
+import Characters from './Components/Characters';
 export default class FlipCard extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +18,7 @@ export default class FlipCard extends Component {
     }
     render() {
         return (
-            <Cards data={this.state.data} />
+            <Characters data={this.state.data} />
         )
     }
 }

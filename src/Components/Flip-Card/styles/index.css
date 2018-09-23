@@ -2,16 +2,34 @@
 
 .flip-container {
     width: 163px;
-    height: 350px;
+    height: 290px;
+}
+
+.flip-container h2 {
+    text-align: center;
+    transition: 400ms ease-out;
 }
 
 .flip-container .flip-content {
     font-family: Lobster Two;
     font-size: 12px;
+    background: rgb(66, 15, 15);
+    color: white;
+}
+
+.flip-container:hover h2 {
+    text-shadow: 0 2px 20px white;
+    transform: scaleX(1.2) scaleY(1.5);
+    transition: 300ms ease-in-out;
+}
+
+.flip-container:active h2 {
+    transform: scaleX(1.1);
+    transition: 100ms ease-in;
 }
 
 .flip-container .flip-list{
-    font-size: 15px;
+    font-size: 13px;
     text-indent: 10px;
     font-family: Lobster Two;
     list-style: none;
