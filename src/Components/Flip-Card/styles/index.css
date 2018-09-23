@@ -1,13 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster+Two);
 
+.flip-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .flip-container {
-    width: 163px;
+    width: 170px;
     height: 290px;
 }
 
 .flip-container h2 {
     text-align: center;
     transition: 400ms ease-out;
+}
+
+.flip-container:hover h2 {
+    text-shadow: 0 2px 20px white;
+    transform: scaleX(1.2) scaleY(1.1);
+    transition: 300ms ease-in-out;
+}
+
+.flip-container:active h2 {
+    transform: scaleX(1.1);
+    transition: 100ms ease-in;
 }
 
 .flip-container .flip-content {
@@ -17,23 +34,99 @@
     color: white;
 }
 
-.flip-container:hover h2 {
-    text-shadow: 0 2px 20px white;
-    transform: scaleX(1.2) scaleY(1.5);
-    transition: 300ms ease-in-out;
-}
-
-.flip-container:active h2 {
-    transform: scaleX(1.1);
-    transition: 100ms ease-in;
-}
-
 .flip-container .flip-list{
-    font-size: 13px;
-    text-indent: 10px;
-    font-family: Lobster Two;
-    list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    font-size: 13px;
+    font-family: Lobster Two;
+    color: rgb(248, 215, 221);
+    background: rgb(66, 15, 15);
+    text-align: center;
 }
+
+.card-front {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -18rem;
+}
+
+.card-front.back-flip {
+    animation: f-back 1s 1 forwards;
+}
+
+.card-front.front-flip {
+    animation: f-front 1s 1 forwards;
+}
+
+@keyframes f-back {
+    0% {
+        transform: rotateY(0deg);
+        z-index: 1
+    }
+    50% {
+        transform: rotateY(90deg) perspective(30rem);
+        z-index: 1;
+    }
+    100% {
+        transform: rotateY(90deg);
+        z-index: -1;
+    }
+}
+
+@keyframes f-front {
+    0% {
+        transform: rotateY(-90deg);
+        z-index: -1;
+    }
+    50% {
+        transform: rotateY(-90deg) perspective(30rem);
+        z-index: -1;
+    }
+    100% {
+        transform: rotateY(0deg);
+        z-index: 1;
+    }
+}
+
+.card-back {
+    z-index: -1;
+    transform: rotateY(-90deg);
+}
+
+.card-back.back-flip {
+    animation: b-back 1s 1 forwards;
+}
+
+.card-back.front-flip {
+    animation: b-front 1s 1 forwards;
+}
+
+@keyframes b-back {
+    0% {
+        z-index: -1
+    }
+    50% {
+        transform: rotateY(-90deg) perspective(30rem);
+        z-index: -1;
+    }
+    100% {
+        transform: rotateY(0deg);
+        z-index: 1;
+    }
+}
+
+@keyframes b-front {
+    0% {
+        transform: rotateY(0deg);
+        z-index: 1;
+    }
+    50% {
+        transform: rotateY(90deg) perspective(30rem);
+        z-index: 1;
+    }
+    100% {
+        transform: rotateY(90deg);
+        z-index: -1;
+    }
+}
+
