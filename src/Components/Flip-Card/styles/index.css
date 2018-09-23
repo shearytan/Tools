@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+
+.flip-container {
+    width: 163px;
+    height: 350px;
+}
+
+.flip-container .flip-content {
+    font-family: Lobster Two;
+    font-size: 12px;
+}
+
+.flip-container .flip-list{
+    font-size: 15px;
+    text-indent: 10px;
+    font-family: Lobster Two;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
